@@ -1,0 +1,321 @@
+@font-face {
+    font-family: Montserrat;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.arrow {
+    position: absolute;
+    right: 5px;
+    content: "";
+    width: 4px;
+    height: 4px;
+    border: 2px solid #ffffff;
+    border-left: none;
+    border-top: none;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    bottom: 6px;
+    border-radius: 2px;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1024px;
+}
+
+.header {
+    padding-left: 18px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #373c3f;
+}
+
+.header_text-nav {
+    display: inline-block;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: -0.1px;
+    line-height: .9rem;
+}
+
+.menu-open {
+    overflow: hidden;
+}
+
+.menu-open .nav {
+    display: block;
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+    z-index: 1000;
+}
+
+.nav {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 37px;
+    background-color: rgba(40, 40, 40, .9);
+}
+
+.nav_items {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.nav_item {
+    line-height: 75px;
+}
+
+.nav_item a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header_toggle-btn {
+    position: absolute;
+    width: 41px;
+    min-height: 37px;
+    top: 0px;
+    right: -1px;
+    background-color: #202529;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.header_toggle-icon {
+    position: relative;
+    top: 18px;
+    width: 16px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #ffffff;
+    cursor: pointer;
+    -webkit-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+    transition: .3s ease-in;
+}
+
+.menu-open .header_toggle-icon {
+    background-color: transparent;
+}
+
+.header_toggle-icon:after, .header_toggle-icon:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    -webkit-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+    transition: .3s ease-in;
+}
+
+.header_toggle-icon:after {
+    top: 4px;
+}
+
+.header_toggle-icon:before {
+    top: -4px;
+}
+
+.menu-open .header_toggle-icon:before {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.menu-open .header_toggle-icon:after {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.banner {
+    background: -webkit-gradient(linear, left top, left bottom, from(#22b1ca), to(#1289a5));
+    background: linear-gradient(to bottom, #22b1ca 0, #1289a5 100%);
+    background-color: #169fb5;
+    position: relative;
+}
+
+.banner_container {
+    width: 72%;
+}
+
+.banner .link {
+    padding-left: 25px;
+    padding-bottom: 48px;
+    padding-top: 54px;
+}
+
+.banner_title {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    line-height: 1.37rem;
+    margin-bottom: 13px;
+}
+
+.banner_link-path {
+    display: block;
+    font-size: .7rem;
+    font-family: Montserrat, Arial, sans-serif;
+    line-height: 1rem;
+    letter-spacing: .2px;
+    position: relative;
+}
+
+.text-box {
+    min-height: 75px;
+    position: relative;
+    z-index: 1;
+    -webkit-box-shadow: 0 2px rgb(154, 26, 222);
+    box-shadow: 0 2px rgb(154, 26, 222);
+}
+
+.text-box-item {
+    width: 78%;
+    float: left;
+    padding-top: 31px;
+    padding-bottom: 28px;
+    padding-left: 26px;
+    background-color: #27212c;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.text-box_title {
+    font-family: Arial, sans-serif;
+    font-size: .6rem;
+    letter-spacing: .7px;
+    color: #9282A0;
+}
+
+.text-box-link {
+    float: left;
+    width: 22%;
+}
+
+.text-box-link a {
+    display: block;
+    position: relative;
+    min-height: 75px;
+    background-color: #bc3183;
+
+}
+
+.text-box-link .arrow {
+    height: 7px;
+    width: 7px;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+    -ms-transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
+    left: 0;
+    right: 6px;
+    margin: 0 auto;
+}
+
+.images-box {
+    position: relative;
+    z-index: 0;
+}
+
+.images-box_item__link a {
+    display: block;
+    position: relative;
+    min-height: 279px;
+    background-color: #5b0fa1;
+}
+
+.images-box_item__link .arrow {
+    width: 16px;
+    height: 16px;
+    top: 48%;
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+    -ms-transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
+    left: 0;
+    right: 12px;
+    margin: 0 auto;
+    border-width: 4px;
+    border-radius: 4px;
+}
+
+.images-box_item {
+    background-size: cover;
+    min-height: 277px;
+    font-size: 0px;
+}
+
+.images-box_item:nth-of-type(2) {
+    background-image: url("../image/bridge-320.jpg");
+}
+
+.images-box_item:nth-of-type(3) {
+    background-image: url("../image/girl-320.jpg");
+}
+
+.info {
+    padding-left: 35px;
+    padding-right: 30px;
+    padding-top: 32px;
+    padding-bottom: 50px;
+    background-color: #ebebeb;
+    text-align: left;
+
+}
+
+.info_title {
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #088CA5;
+    letter-spacing: .6px;
+}
+
+.info_text {
+    color: #515151;
+    font-size: .8rem;
+    line-height: 1.4rem;
+    letter-spacing: .5px;
+}
+
+.info_text:first-child {
+    margin-bottom: 25px;
+}

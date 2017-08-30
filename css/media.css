@@ -39,15 +39,12 @@
 
     .banner_container {
         width: 78%;
-        position: relative;
     }
 
     .banner .link {
         padding-left: 52px;
         padding-bottom: 103px;
         padding-top: 109px;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
     }
 
     .banner_title {
@@ -248,7 +245,7 @@
 
     .images-box_item {
         min-height: 282px;
-        width: calc(100% / 3);
+        width:33.333%;
         float: left;
     }
 
